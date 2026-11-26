@@ -1,0 +1,14 @@
+services:
+  scanner:
+    build: .
+    container_name: ai-code-scanner
+    ports:
+      - "8000:8000"
+    environment:
+      AI_ENABLED: ${AI_ENABLED:-false}
+      AI_BASE_URL: ${AI_BASE_URL:-https://api.openai.com/v1}
+      AI_MODEL: ${AI_MODEL:-}
+      AI_API_KEY: ${AI_API_KEY:-}
+      OSV_ENABLED: ${OSV_ENABLED:-true}
+      MAX_UPLOAD_MB: ${MAX_UPLOAD_MB:-25}
+    restart: unless-stopped
