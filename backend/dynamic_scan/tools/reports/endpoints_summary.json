@@ -1,0 +1,48 @@
+{
+  "target_host": "itinero.company",
+  "scope_domain": "itinero.company",
+  "total_unique_endpoints": 0,
+  "active_endpoints": 0,
+  "inactive_endpoints": 0,
+  "unverified_endpoints": 0,
+  "error_endpoints": 0,
+  "soft_404_suspects": 0,
+  "gau_active_endpoints": 0,
+  "active_status_codes": {},
+  "sources": {
+    "katana": 0,
+    "gau": 0,
+    "both": 0
+  },
+  "categories": {
+    "API": 0,
+    "GRAPHQL": 0,
+    "WEB": 0
+  },
+  "active_categories": {
+    "API": 0,
+    "GRAPHQL": 0,
+    "WEB": 0
+  },
+  "methods": {},
+  "probe": {
+    "enabled": true,
+    "candidates": 0,
+    "probed": 0,
+    "inferred": 0,
+    "deduped": 0,
+    "skipped_static": 0,
+    "skipped_unsafe": 0,
+    "skipped_over_limit": 0,
+    "active": 0,
+    "inactive": 0,
+    "errors": 0,
+    "soft_404_suspects": 0,
+    "catch_all_hosts": []
+  },
+  "failures": [
+    "Katana: Katana timed out after 360s"
+  ],
+  "report_directory": "D:\\Downloads\\Security Agent Company\\backend\\dynamic_scan\\tools\\reports",
+  "note": "Active = HTTP status < 400, or 401/403/405. GAU URLs are verified with safe HEAD requests (GET only if HEAD is unsupported). Network errors/timeouts are listed separately (endpoints_errors.txt), not as inactive. Hosts that answer a random non-existent path are treated as catch-all and matching responses go to endpoints_soft404_suspect.txt (--keep-soft404 keeps them in the active list)."
+}
